@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Patrasayer</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" integrity="sha512-WEQNv9d3+sqyHjrqUZobDhFARZDko2wpWdfcpv44lsypsSuMO0kHGd3MQ8rrsBn/Qa39VojphdU6CMkpJUmDVw==" crossorigin="anonymous" />
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		<style>
+			*{margin: 0;padding: 0;font-family: 'Josefin Sans', sans-serif;}
+		/* Make the image fully responsive */
+		.carousel-inner img {
+		width: 100%;
+		height: 100%;
+		}
+		
+		
+		</style>
+	</head>
+	<body>
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i></button>
+		<script>
+		//Get the button
+		var mybutton = document.getElementById("myBtn");
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		mybutton.style.display = "block";
+		} else {
+		mybutton.style.display = "none";
+		}
+		}
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+		}
+		</script>
+		<header>
+			<!--*********************************************************************************nav bar starts***********************************************************************************-->
+
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand pl-3" href="#">Patrasayer</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link disabled" href="#"><i class="fa fa-fw fa-home"></i> Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="gallery.html"><i class="fa fa-photo"></i> Gallery <span class="sr-only">(current)</span></a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link" href="#c4"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html"><i class="fa fa-fw fa-user"></i> About Us</a>
+						</li>
+						
+					</ul>
+					
+				</div>
+			</nav>
+			<!--*********************************************************************************nav bar ends***********************************************************************************-->
+
+
+			<!--*********************************************************************************carousel 1 starts***********************************************************************************-->
+			<div class="row container-fluid m-2">
+				<div class="col-lg-4 col-md-6 col-12 p-2">
+					<div id="demo1" class="carousel slide" data-ride="carousel">
+						<ul class="carousel-indicators">
+							<li data-target="#demo1" data-slide-to="0" class="active"></li>
+							<li data-target="#demo1" data-slide-to="1"></li>
+							<li data-target="#demo1" data-slide-to="2"></li>
+							
+						</ul>
+						<div class="carousel-inner car1">
+
+
+							<div class="carousel-item active">
+								<a href="p3.jpg" target="_blank"><img src="p3.jpg" alt="PBGDI" width="1100" height="500"></a>
+								
+								<div class="carousel-caption">
+									<h3>PBGDI</h3>
+									<p>We had such a great time in pbgdi</p>
+								</div>
+							</div>
+							
+							<div class="carousel-item">
+								<a href="p1.jpg" target="_blank"><img src="p1.jpg" alt="Forest" width="1100" height="500"></a>
+								<div class="carousel-caption">
+									<h3>Railway station</h3>
+									<p>Thank you, Chicago!</p>
+								</div>
+							</div>
+
+							<div class="carousel-item">
+								<a href="p2.jpg" target="_blank"><img src="p2.jpg" alt="Park" width="1100" height="500"></a>
+								<div class="carousel-caption">
+									<h3>New York</h3>
+									<p>We love the Big Apple!</p>
+								</div>
+							</div>
+							
+						</div>
+						<a class="carousel-control-prev" href="#demo1" data-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</a>
+						<a class="carousel-control-next" href="#demo1" data-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</a>
+					</div>
+				</div>
+				<!--*********************************************************************************carousel 1 ends***********************************************************************************-->
+
+
+				<!--*********************************************************************************carousel 2 starts***********************************************************************************-->
+				<div class="col-lg-4 col-md-6 col-12 p-2">
+					<div id="demo2" class="carousel slide" data-ride="carousel">
+						<ul class="carousel-indicators">
+							<li data-target="#demo2" data-slide-to="0" class="active"></li>
+							<li data-target="#demo2" data-slide-to="1"></li>
+							<li data-target="#demo2" data-slide-to="2"></li>
+							
+						</ul>
+
+
+						<div class="carousel-inner car2">
+
+							<div class="carousel-item active">
+								<a href="p4.jpg" target="_blank"><img src="p4.jpg" alt="PBGDI" width="1100" height="500"></a>
+								<div class="carousel-caption">
+									<h3 class="text-success">SKY</h3>
+									<p>delicious combination of sun and cloud</p>
+								</div>
+							</div>
+							
+							<div class="carousel-item">
+								<a href="p5.jpg" target="_blank"><img src="p5.jpg" alt="Forest" width="1100" height="500"></a>
+								<div class="carousel-caption">
+									<h3>Railway station</h3>
+									<p>Thank you, Chicago!</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<a href="p3.jpg" target="_blank"><img src="p3.jpg" alt="Park" width="1100" height="500"></a>
+								<div class="carousel-caption">
+									<h3>New York</h3>
+									<p>We love the Big Apple!</p>
+								</div>
+							</div>
+							
+						</div>
+						<a class="carousel-control-prev" href="#demo2" data-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</a>
+						<a class="carousel-control-next" href="#demo2" data-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</a>
+					</div>
+				</div>
+				
+				
+				
+				<!--*********************************************************************************carousel 2 ends***********************************************************************************-->
+
+
+				<!--*********************************************************************************carousel 3 starts***********************************************************************************-->
+				
+				<div class="col-lg-4 col-md-6 col-12 p-2">
+					<div id="demo3" class="carousel slide" data-ride="carousel">
+						<ul class="carousel-indicators">
+							<li data-target="#demo1" data-slide-to="0" class="active"></li>
+							<li data-target="#demo1" data-slide-to="1"></li>
+							<li data-target="#demo1" data-slide-to="2"></li>
+							
+						</ul>
+
+
+						<div class="carousel-inner car3">
+
+
+							<div class="carousel-item active">
+								<a href="t3.jpg" target="_blank"><img src="t3.jpg" alt="PBGDI" width="1100" height="500"></a>
+								<div class="carousel-caption">
+									<h3>Kalonjoy Tala</h3>
+									<p>We had such a great time in Kalonjoy Tala</p>
+								</div>
+							</div>
+							
+							<div class="carousel-item">
+								<a href="t2.jpg" target="_blank"><img src="t2.jpg" alt="Forest" width="1100" height="500"></a>
+								<div class="carousel-caption">
+									<h3>Railway station</h3>
+									<p>Thank you, Chicago!</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<a href="t3.jpg" target="_blank"><img src="t3.jpg" alt="Park" width="1100" height="500"></a>
+								<div class="carousel-caption">
+									<h3>New York</h3>
+									<p>We love the Big Apple!</p>
+								</div>
+							</div>
+							
+						</div>
+						<a class="carousel-control-prev" href="#demo3" data-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</a>
+						<a class="carousel-control-next" href="#demo3" data-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--*********************************************************************************carousel 3 ends***********************************************************************************-->
+		</header>
+
+
+		<!--*********************************************************************************About starts***********************************************************************************-->
+		<section>
+			<div class="container-fluid">
+				<h1 class="text-center text-capitalize pt-5">About</h1>
+				<hr class="w-25 mx-auto pb-5">
+				<div class="row mb-5 p-3">
+					
+					
+					<div class="col-lg-9 col-md-8 col-12 container">
+						<h3>Geography</h3>
+						<hr>
+						<p>
+							<ul>
+								<li>
+									Patrasayer is located at .<a href="https://www.google.com/maps/place/Patrasayer,+West+Bengal+722206/@23.1956152,87.529943,15z/data=!3m1!4b1!4m5!3m4!1s0x39f787f551c42065:0xa96c932ec916c6ed!8m2!3d23.1906112!4d87.5445302">23°12′16.9″N 87°31′50.5″E</a>
+								</li>
+								<li>
+									The map alongside shows the Bishnupur subdivision of Bankura district. Physiographically, this area has fertile low lying alluvial plains.It is a predominantly rural area with 90.06% of the population living in rural areas and only 8.94% living in the urban areas.It was a part of the core area of Mallabhum.
+								</li>
+							</ul>
+						</p>
+						<h3>Demographics</h3>
+						<hr>
+						<p>
+							According to the 2011 Census of India, Patrasayer had a total population of 10,844 of which 5,528 (51%) were males and 5,316 (49%) were females. Population below 6 years was 1,115. The total number of literates in Patrasayer was 7,274 (74.77% of the population over 6 years).
+						</p>
+						<h3>Transport</h3>
+						<hr>
+						<p>
+							<ul>
+								<li>
+									Patrasayer railway station, 56.5 km from Bankura, is a station on the Bankura-Masagram line (formerly Bankura Damodar Railway) of South Eastern Railway. As of September 2016, DEMU services were available between Bankura and Mathnasibpur.
+								</li>
+								<li>
+									The State Highway 8 (West Bengal) running from Santaldih (in Purulia district) to Majhdia (in Nadia district) passes through Patrasayer. 
+								</li>
+								<li>
+									There are bus services from Bankura to Patrasayer via Beliatore and Sonamukhi,Bishnupur to Patrasayer,and Volvo services to Nutungra,and Bankibheri (in Paschim Medinipur) - 196 km.
+								</li>
+							</ul>
+						</p>
+					</div>
+					<div class="col-lg-3 col-md-4 col-6 container">
+						<img src="india.png" class="img-fluid pb-5">
+					</div>
+					<div class="col-lg-3 col-md-4 col-6 container">
+						<img src="wb2.png" class="img-fluid pb-5">
+					</div>
+					
+					<div class="col-lg-9 col-md-8 col-12 container">
+						<h3>Education</h3>
+						<hr>
+						<p>
+							<ul>
+								<li>
+									Patrasayer Mahavidyalaya, established in 2005, is affiliated to the University of Burdwan. It offers courses in arts.
+								</li>
+								<li>
+									Patrasayer Bamira Gurudas Institution is a Bengali-medium coeducational institution established in 1915. It has facilities for teaching from class V to class XII. The school has 10 computers, a library with 3,000 books and a playground.
+								</li>
+								<li>
+									Krishnanagar High School is a Bengali-medium coeducational institution established in 1957. It has facilities for teaching from class V to class XII. The school has 10 computers, a library with 1,300 books and a playground.
+								</li>
+								<li>
+									Patrasayer Girls High School is a Bengali-medium girls only institution established in 1956. It has facilities for teaching from class V to class X. The school has 14 computers, a library with 2,500 books and a playground. 
+								</li>
+								<li>
+									Patrasayer Government Model School is an English-medium coeducational institution established at Kushdwip in 2014. It has facilities for teaching from class VI to class XII.
+								</li>
+							</ul>
+							<h3>Culture</h3>
+							<hr>
+							<p>
+								
+								<ul>
+									<li>
+										The Kalinjoy Shiva temple at Patrasayer is a plain brick temple built around 16th century.
+									</li>
+									<li>
+										The Raghuvira temple at Patrasayer is a laterite at-chala with terracotta inlay built in the 19th century.
+									</li>
+									<li>
+										The Shiva temple at Bamira is a nava-ratna with ridged turrets and rich terracotta on two sides, built in the 19th century.
+									</li>
+									<li>
+										The Radha-Damodara temple at Birsingha is a nava-ratna with ridged turrets and rich terracotta façade, built in 1855. The nahabatkhna still
+									</li>
+								</ul>
+							</p>
+							
+							
+							<p class="text-white"><a href="https://en.wikipedia.org/wiki/Patrasayer"><button class="btn bg-primary m-3 align-items-center text-white">Wiki  <i class="fa fa-arrow-right"></i></button></a></p>
+						</div>
+						
+					</div>
+				</div>
+			</section>
+			<!--*********************************************************************************About ends***********************************************************************************-->
+			<!--*********************************************************************************service starts***********************************************************************************-->
+			
+			
+			<!--*********************************************************************************service ends***********************************************************************************-->
+			<!--*********************************************************************************contact starts***********************************************************************************-->
+			
+			<!--*********************************************************************************contact ends***********************************************************************************-->
+			<!--*********************************************************************************gallery starts***********************************************************************************-->
+			<section id="c2">
+				<div class="container-fluid">
+					<h1 class="text-center text-capitalize pt-5">highlights</h1>
+					<hr class="w-25 mx-auto pb-5">
+					<div class="row no-gutters gallerys">
+
+						<div class="col-lg-4 col-md-4 col-6">
+							<a href="t3.jpg" target="_blank">
+								<img src="t3.jpg" class="img-fluid p-1 rounded">
+							</a>
+						</div>
+						<div class="col-lg-4 col-md-4 col-6">
+							<a href="p3.jpg" target="_blank">
+								<img src="p3.jpg" class="img-fluid p-1 rounded">
+							</a>
+						</div>
+						<div class="col-lg-4 col-md-4 col-6">
+							<a href="p2.jpg" target="_blank">
+								<img src="p2.jpg" class="img-fluid p-1 rounded">
+							</a>
+						</div>
+						<div class="col-lg-4 col-md-4 col-6">
+							<a href="t3.jpg" target="_blank">
+								<img src="t3.jpg" class="img-fluid p-1 rounded">
+							</a>
+						</div>
+						<div class="col-lg-4 col-md-4 col-6">
+							<a href="t3.jpg" target="_blank">
+								<img src="t3.jpg" class="img-fluid p-1 rounded">
+							</a>
+						</div>
+						<div class="col-lg-4 col-md-4 col-6">
+							<a href="t3.jpg" target="_blank">
+								<img src="t3.jpg" class="img-fluid p-1 rounded">
+							</a>
+						</div>
+						
+						
+						
+					</div>
+					<p><a href="gallery.html"><button class="btn bg-primary m-3 align-items-center">see more</button></a></p>
+				</div>
+			</section>
+			<!--***************************************************************************gallery ends***********************************************************************************-->
+
+
+			<!--*********************************************************************************footer.starts***********************************************************************************-->
+			<section id="c4">
+				<div class="container-fluid bg-dark text-white align-items-center text-center p-5 mt-5">
+					<h4>connect with us</h4>
+					<div class="pt-3">
+						<p class="pb-5">
+							<a href="https://www.facebook.com/soujash.mandal.7/" class="m-2 "><i class='fab fa-facebook-f' style='font-size:24px;color: white;'></i></a>
+							<a href="https://www.instagram.com/soujash_mandal/" class="m-2 "><i class='fab fa-instagram' style='font-size:24px;color: white;'></i></a>
+							<a href="https://www.youtube.com/channel/UCJ8vothd4ZfA33bwXr5Wu4w" class="m-2 "><i class='fab fa-youtube' style='font-size:24px;color: white;'></i></a>
+							<a href="https://twitter.com/SoujashM" class="m-2 "><i class='fab fa-twitter' style='font-size:24px;color: white;'></i></a>
+							<a href="https://www.quora.com/profile/Soujash-Mandal" class="m-2 "><i class='fab fa-quora' style='font-size:24px;color: white;'></i></a>
+							<a href="" class="m-2 "><i class='fab fa-pinterest' style='font-size:24px;color: white;'></i></a>
+						</p>
+					</div>
+					<h5>We have created this website using bootstrap4 , HTML , CSS & JS</h5>
+					<h3>Designed by</h3><h3> <a href="#">Soujash Mandal</a></h3>
+				</div>
+			</section>
+			<!--*********************************************************************************footer.ends*************************************************************************************-->
+
+
+			
+			<!--******************************************************************************************js*******************************************************************************-->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js" integrity="sha512-C1zvdb9R55RAkl6xCLTPt+Wmcz6s+ccOvcr6G57lbm8M2fbgn2SUjUJbQ13fEyjuLViwe97uJvwa1EUf4F1Akw==" crossorigin="anonymous"></script>
+			<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js" integrity="sha512-C1zvdb9R55RAkl6xCLTPt+Wmcz6s+ccOvcr6G57lbm8M2fbgn2SUjUJbQ13fEyjuLViwe97uJvwa1EUf4F1Akw==" crossorigin="anonymous"></script>
+			<script>
+				$(document).ready(function(){
+					$('.gallerys').magnificPopup({
+						type:'image',
+						delegate:'a',
+						gallery: {
+							enabled : true
+						}
+					});
+				});
+			</script>
+			<script>
+				$(document).ready(function(){
+					$('.car1').magnificPopup({
+						type:'image',
+						delegate:'a',
+						gallery: {
+							enabled : true
+						}
+					});
+				});
+			</script>
+			<script>
+				$(document).ready(function(){
+					$('.car2').magnificPopup({
+						type:'image',
+						delegate:'a',
+						gallery: {
+							enabled : true
+						}
+					});
+				});
+			</script>
+			<script>
+				$(document).ready(function(){
+					$('.car3').magnificPopup({
+						type:'image',
+						delegate:'a',
+						gallery: {
+							enabled : true
+						}
+					});
+				});
+			</script>
+		</body>
+	</html>
